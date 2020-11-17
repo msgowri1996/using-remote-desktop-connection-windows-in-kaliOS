@@ -1,0 +1,41 @@
+===COMMANDS===
+fisrt install WSL2 in windows (using POWERSHELL)
+
+run POWERSHELL as administrator
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux (TYPE THIS CODE IN POWERSHELL)
+
+RESTART computer 
+
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart (TYPE THIS CODE IN POWERSHELL)
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart (TYPE THIS CODE IN POWERSHELL)
+
+RESTART computer
+
+AND
+INSTALL LINUX KERNEL IN WINDOWS 
+https://aka.ms/wsl2kernel (USE THIS LINK)
+
+SET DEFAULT TO WSL 2
+wsl --set-default-version 2 (TYPE THIS CODE IN POWERSHELL)
+
+CHECK VERSION AND LINUX RUNING OR NOT
+wsl --list --verbose (TYPE THIS CODE IN POWERSHELL)
+
+AND
+INSTALL KALI LINUX IN WINDOWS
+
+OPEN WINDOWS STORE AND TYPE KALI IN SEARCH BOX INSTALL KALI LINUX
+SET USERNAME AND PASSWORD
+UPDATE AND UPGRADE THE KALI LINUX
+sudo apt update && sudo apt upgrade -y (TYPE THIS CODE IN KALI LINUX)
+sudo apt install kali-desktop-xfce -y (TYPE THIS CODE IN KALI LINUX)
+
+INSTALL XRDP
+sudo apt install xrdp -y (TYPE THIS CODE IN KALI LINUX)
+
+AND START THE XRDP SERVICE
+sudo service xrdp start (TYPE THIS CODE IN KALI LINUX)
+
+IF YOUR FACE ANY ERROR PULL REQEST TO ME 
+
+
